@@ -1,0 +1,26 @@
+@import "_fonts.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@supports (font-variation-settings: normal) {
+  .font-sans {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+a {
+  @apply font-semibold text-blue-600;
+
+  &:hover {
+    @apply text-blue-500;
+  }
+}
+
+main {
+  @apply max-w-2xl px-4 py-12 mx-auto;
+
+  @screen lg {
+    @apply px-8;
+  }
+}
